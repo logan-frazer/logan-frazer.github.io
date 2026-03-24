@@ -307,7 +307,9 @@
       flex-direction: column;
       gap: 1rem;
       transition: background 0.2s;
-      cursor: default;
+      cursor: pointer;
+	  text-decoration: none;
+      color: inherit;
     }
 
     .project-card:hover { background: var(--accent-lt); }
@@ -481,9 +483,10 @@
     @media (max-width: 900px) {
       nav { padding: 1rem 2rem; }
       #hero { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; }
-      .hero-right { display: none; }
-      section { padding: 5rem 2rem; }
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-right { margin-top: 2rem; }
+	  .hero-stat { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+	  section { padding: 5rem 2rem; }
+      .about-grid { grid-template-columns: 1fr; max-width: 700px; }
       .projects-grid { grid-template-columns: 1fr; }
       .skills-layout { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -571,32 +574,6 @@
           in Fusion 360 or writing a MATLAB pathfinding simulation — I care about getting it right.
         </p>
       </div>
-      <div class="about-details reveal">
-        <div class="detail-row">
-          <span class="detail-label">School</span>
-          <span class="detail-val">Ohio Northern University</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">Major</span>
-          <span class="detail-val">Mechanical Engineering</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">Grad Year</span>
-          <span class="detail-val">2028</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">HS GPA</span>
-          <span class="detail-val">4.0 / 4.0</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">Activities</span>
-          <span class="detail-val">SAE Baja, Honors Program</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">Seeking</span>
-          <span class="detail-val">Summer Engineering Internship</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -608,7 +585,7 @@
     </div>
     <div class="projects-grid">
 
-      <div class="project-card reveal">
+      <a href="projects/project1.html" class="project-card reveal">
         <span class="project-num">01</span>
         <h3>Print-in-Place Projector Stand</h3>
         <p>
@@ -622,9 +599,9 @@
           <span class="tag">FDM Printing</span>
           <span class="tag">Mechanism Design</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card reveal">
+      <a href="projects/project2.html" class="project-card reveal">
         <span class="project-num">02</span>
         <h3>Modular Tunnel System</h3>
         <p>
@@ -638,9 +615,9 @@
           <span class="tag">Fabrication</span>
           <span class="tag">Project Lead</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card reveal">
+      <a href="projects/project3.html" class="project-card reveal">
         <span class="project-num">03</span>
         <h3>Baja Car Jack & Dolly</h3>
         <p>
@@ -653,9 +630,9 @@
           <span class="tag">CAD</span>
           <span class="tag">Fabrication</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card reveal">
+      <a href="projects/project4.html" class="project-card reveal">
         <span class="project-num">04</span>
         <h3>Automatic Plant Watering System</h3>
         <p>
@@ -669,9 +646,9 @@
           <span class="tag">Automation</span>
           <span class="tag">Prototyping</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card reveal">
+      <a href="projects/project5.html" class="project-card reveal">
         <span class="project-num">05</span>
         <h3>Cassie's Mission: Robotics Pathfinding Sim</h3>
         <p>
@@ -686,7 +663,7 @@
           <span class="tag">TSP</span>
           <span class="tag">Simulation</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </section>
